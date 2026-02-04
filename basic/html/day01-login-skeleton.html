@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+  Day 1: HTML 기본 구조 + 로그인 화면 뼈대
+  목표: 제목, 입력창, 버튼이 화면에 보이게 만들기
+-->
+<html lang="ko">
+  <head>
+    <!-- 문서 인코딩 및 기본 정보 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      meta 태그: 화면에 보이진 않지만 브라우저에게 설정 정보를 전달하는 태그
+      name="viewport": “화면(뷰포트) 설정”에 대한 정보임을 알려줌
+      content="...": 실제 설정값을 담는 부분
+      width=device-width: 화면 너비를 기기 너비와 같게 맞춤 (모바일에서 축소되지 않게)
+      initial-scale=1.0: 처음 확대/축소 비율을 1배로 시작한다는 뜻 (처음부터 과도하게 확대/축소되지 않게)
+      한 줄로 요약하면:
+      모바일에서 화면 크기에 맞춰 정상 비율로 표시되도록 하는 설정입니다.
+    -->
+    <!-- 
+      <style>은 보통 <head> 안에 넣는 게 정석임.
+      <head>에 두면: 페이지가 로드될 때 CSS가 먼저 적용돼서 깜빡임이 적음.
+      <body>에 두면: 뒤늦게 스타일이 적용될 수 있어서 비추천.
+      예외적으로 특정 컴포넌트에만 임시로 스타일을 넣어야 할 때 body 안에 넣기도 
+      하지만, 기본 원칙은 **<head>**입니다. 
+    -->
+
+    <style>
+      body {
+        margin: 20px;
+        font-family: 굴림, Arial, sans-serif, "Apple SD Gothic Neo";
+        font-size: 30px;
+      }
+
+      .box {
+        margin: 20px;  /* 외부 여백 */
+        padding: 16px; /* 내부 여백 */
+        border: 3px solid #222;
+        background: #f5f5f5;
+      }
+
+      .box .title {
+        margin: 0 0 8px 0; /* 상->우->하->좌,  아래쪽 여백만 8px */
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .box .desc {
+        margin: 0;
+        color: #555;
+      }    
+    </style>
+    <title>Login Skeleton</title>
+    <!-- CSS 연결: basic/css/day01-box-model.css 를 여기에서 연결 -->
+    <!-- <link rel="stylesheet" href="../css/day01-box-model.css" /> -->
+  </head>
+  <body>
+    <!-- 화면에 보이는 영역 -->
+    <h1>로그인</h1>
+
+    <div class="box">
+      <p class="title">입력 영역</p>
+      <p class="desc">box model을 확인하는 영역입니다.</p>
+    </div>
+
+    <div>
+      <label for="email">이메일</label>
+      <input id="email" type="email" placeholder="name@example.com" />
+    </div>
+
+    <div>
+      <label for="password">비밀번호</label>
+      <input id="password" type="password" placeholder="********" />
+    </div>
+
+    <button type="button" id="click-btn">로그인</button>
+
+    <p id="message"></p>
+
+    <!--
+      <script src="...">는 보통 <'/body> 바로 위에 두는 게 일반적이에요.
+      이유:
+        HTML이 먼저 렌더링된 뒤에 JS가 실행돼서 화면이 늦게 뜨는 문제를 줄일 수 있어요.
+        DOM 요소가 다 만들어진 뒤에 스크립트가 실행돼서 오류가 줄어듭니다.
+        하지만 <head>에 두고 싶다면 아래처럼 defer를 붙이면 됩니다.
+        <head>
+          <script src="../js/day01-basics.js" defer></script>
+        </head>
+    -->
+            
+    <!-- JS 연결: basic/js/day01-basics.js 를 여기에서 연결 -->
+    <!-- <script src="../js/day01-basics.js"></script> -->
+ 
+     <script>
+        let count = 0;
+
+        function updateMessage() {
+          const messageEl = document.getElementById("message");
+          if (!messageEl) return;
+
+          count += 1;
+          if (count === 1) {
+            messageEl.textContent = "첫 클릭입니다!";
+          } else {
+            messageEl.textContent = `총 ${count}번 클릭했습니다.`;
+          }
+        }
+
+        const btn = document.getElementById("click-btn");
+        if (btn) {
+          btn.addEventListener("click", updateMessage);
+        }
+     </script>
+  </body>
+</html>

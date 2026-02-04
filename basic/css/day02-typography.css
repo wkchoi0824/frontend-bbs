@@ -1,0 +1,38 @@
+/*
+  Day 2: 타이포그래피와 색상
+  목표: 텍스트 가독성과 기본 톤을 맞추기
+*/
+
+:root {
+  --text: #222;
+  --muted: #666;
+  --primary: #2f6fed;
+}
+
+body {
+  margin: 24px;
+  font-family: "Georgia", serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 12px 0;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 12px 0;
+  color: var(--muted);
+}
+
+.link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,60 @@
+/*
+  Day 4: 게시판 목록 스타일
+  목표: 리스트/테이블 가독성 확보
+*/
+
+body {
+  margin: 24px;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+.layout-header {
+  padding: 16px;
+  background: #222;
+  color: #fff;
+}
+
+.layout-main {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.layout-section {
+  flex: 3;
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.layout-aside {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.layout-footer {
+  padding: 12px 16px;
+  background: #f5f5f5;
+}
+
+.board {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.board th,
+.board td {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.board th {
+  background: #f5f7fb;
+  font-weight: 600;
+}
+
+.board tr:hover {
+  background: #f9fbff;
+}
