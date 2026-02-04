@@ -52,4 +52,4 @@ git push
 **참고**
 - `LF will be replaced by CRLF` 경고는 Windows 줄바꿈 관련 안내라서
   치명적인 오류가 아닙니다.
-- GitHub 로그인 창이 뜨면 브라우저 인증을 완료하면 됩니다.
+- GitHub 로그인 창이 뜨면 브라우저 인증을 완료하면 됩니다...
