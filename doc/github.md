@@ -49,6 +49,15 @@ git commit -m "update login skeleton comments"
 git push
 ```
 
+**8. VS Code GUI로 커밋/푸시**
+1. 왼쪽 사이드바에서 **Source Control** 아이콘 클릭
+2. `Changes` 목록에서 `doc/github.md` 확인
+3. 파일 오른쪽에 있는 `+` 아이콘을 눌러 **Stage**
+4. 위쪽 메시지 입력칸에 커밋 메시지 입력  
+   예: `add github setup notes`
+5. **Commit** 버튼 클릭
+6. 상단 또는 좌측의 **Sync Changes** 또는 **Push** 클릭
+
 **참고**
 - `LF will be replaced by CRLF` 경고는 Windows 줄바꿈 관련 안내라서
   치명적인 오류가 아닙니다.
