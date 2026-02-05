@@ -57,6 +57,15 @@ src/App.jsx (화면 렌더링)
 - 전역 스타일 파일입니다.
 - 전체 페이지에 적용되는 기본 스타일을 넣습니다.
 
+### `src/assets`
+- React에서 **import 해서 사용하는 이미지/아이콘**을 넣는 폴더입니다.
+- 예: `import logo from "./assets/logo.png"`처럼 사용
+
+### `public`
+- 빌드 시 그대로 복사되는 **정적 파일** 폴더입니다.
+- 주소로 직접 접근 가능합니다.
+  예: `http://localhost:5173/favicon.svg`
+
 ---
 
 ## 3. 실행(구동) 방법
