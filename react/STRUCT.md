@@ -147,6 +147,21 @@ npm install @mui/material @emotion/react @emotion/styled
 - 테마 적용은 `ThemeProvider`로 감싸는 방식입니다.
 - 예시 코드는 아래 **부록** 참고
 
+### Q4-4. 폰트 이름에 따옴표를 쓰는 이유는?
+- 폰트 이름에 **공백이 있으면 따옴표가 필수**입니다.
+  예: `"Space Grotesk"`
+- 공백이 없으면 따옴표 없이 써도 됩니다.
+  예: `Manrope`
+
+예시:
+```js
+// 공백 있는 폰트명은 따옴표 필요
+fontFamily: '"Space Grotesk", sans-serif'
+
+// 공백 없는 폰트명은 따옴표 생략 가능
+fontFamily: "Manrope, sans-serif"
+```
+
 ### Q4-5. 백엔드 연동은 어떻게 시작하나요? (fetch)
 - 프론트에서 **API를 호출**하는 순간부터 백엔드와 연결됩니다.
 - 가장 기본적인 방식은 `fetch`입니다.
