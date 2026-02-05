@@ -8,13 +8,27 @@ import PostForm from "../components/PostForm"; // 입력 폼 컴포넌트
 const WritePostPage = () => {
   return (
     <Box>
-      <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}>
-        <Typography variant="h6" sx={{ fontWeight: 700 }}>
+      {/* Box: 제목과 라벨 배치 */}
+      <Box
+        sx={{
+          display: "flex", // 가로 배치
+          alignItems: "center", // 세로 중앙 정렬
+          gap: 1, // 요소 간격
+          mb: 2, // 아래 여백
+        }}
+      >
+        {/* Typography: 페이지 제목 */}
+        <Typography
+          variant="h6" // 글쓰기 페이지 제목 크기
+          sx={{ fontWeight: 700 }} // 굵기 강조
+        >
           글 작성 폼
         </Typography>
+        {/* Chip: 작은 라벨 */}
         <Chip label="Page 영역" size="small" />
       </Box>
-      <PostForm /> {/* 실제 입력 폼 */}
+      {/* PostForm: 입력 폼 컴포넌트 */}
+      <PostForm />
     </Box>
   );
 };

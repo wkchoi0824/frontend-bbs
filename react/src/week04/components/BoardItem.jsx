@@ -7,12 +7,14 @@ import { ListItem, ListItemText, Chip } from "@mui/material";
 
 export default function BoardItem({ post }) {
   return (
-    <ListItem divider> {/* 항목 사이에 구분선 */}
+    <ListItem divider> {/* ListItem: 리스트 한 줄 */}
+      {/* ListItemText: primary/secondary 텍스트 */}
       <ListItemText
-        primary={`${post.id}. ${post.title}`} // 제목
-        secondary={`작성자: ${post.author}`} // 보조 정보
+        primary={`${post.id}. ${post.title}`} // 제목(메인 텍스트)
+        secondary={`작성자: ${post.author}`} // 보조 정보(작성자)
       />
-      <Chip label="Item" size="small" /> {/* 아이템 표시 */}
+      {/* Chip: 아이템 라벨 */}
+      <Chip label="Item" size="small" />
     </ListItem>
   );
 }

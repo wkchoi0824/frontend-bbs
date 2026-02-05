@@ -8,7 +8,8 @@ import BoardListPage from "./BoardListPage"; // 실제 페이지
 const Week05Page = () => {
   return (
     <MainLayout>
-      <BoardListPage /> {/* 메인 콘텐츠 영역 */}
+      {/* BoardListPage: 실제 콘텐츠 화면 */}
+      <BoardListPage />
     </MainLayout>
   );
 };

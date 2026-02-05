@@ -14,10 +14,13 @@ export default function BoardList({ items }) {
 
   return (
     <Box>
-      <Chip label="List 영역" size="small" sx={{ mb: 1 }} /> {/* 리스트 영역 표시 */}
+      {/* Chip: 리스트 영역 표시 라벨 */}
+      <Chip label="List 영역" size="small" sx={{ mb: 1 }} />
+      {/* List: 항목들을 세로로 나열 */}
       <List>
         {items.map((post) => (
-          <BoardItem key={post.id} post={post} /> // key는 React 리스트 필수
+          // key는 React 리스트에서 필수(고유값)
+          <BoardItem key={post.id} post={post} />
         ))}
       </List>
     </Box>

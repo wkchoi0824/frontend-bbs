@@ -8,7 +8,14 @@ import WritePostPage from "./WritePostPage";
 const Week06Page = () => {
   return (
     <Box> {/* 전체 레이아웃 박스 */}
-      <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}>
+      <Box
+        sx={{
+          display: "flex", // 가로 배치
+          alignItems: "center", // 세로 중앙 정렬
+          gap: 1, // 요소 간격
+          mb: 2, // 아래 여백
+        }}
+      >
         <Typography variant="h5" sx={{ fontWeight: 700 }}>
           글 작성
         </Typography>
@@ -17,10 +24,10 @@ const Week06Page = () => {
       <Paper
         elevation={0}
         sx={{
-          p: 2,
-          border: "1px solid #e2e8f0",
-          borderRadius: 3,
-          boxShadow: "0 8px 20px rgba(15, 23, 42, 0.06)",
+          p: 2, // 내부 여백
+          border: "1px solid #e2e8f0", // 테두리
+          borderRadius: 3, // 둥근 모서리
+          boxShadow: "0 8px 20px rgba(15, 23, 42, 0.06)", // 그림자
         }}
       >
         <WritePostPage /> {/* 실제 글쓰기 페이지 */}

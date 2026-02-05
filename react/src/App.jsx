@@ -45,12 +45,14 @@ const theme = createTheme({
 function Home() {
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>
+      {/* Box: 제목과 라벨을 나란히 배치 */}
       <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}>
         <Typography variant="h4" sx={{ fontWeight: 700 }}>
           React 학습 화면 선택
         </Typography>
         <Chip label="Home" size="small" color="secondary" />
       </Box>
+      {/* Paper: 카드 형태 컨테이너 */}
       <Paper
         elevation={0}
         sx={{
@@ -59,6 +61,7 @@ function Home() {
           boxShadow: "0 12px 30px rgba(15, 23, 42, 0.06)",
         }}
       >
+        {/* List: 주차 링크 목록 */}
         <List sx={{ "& .MuiListItemButton-root": { borderRadius: 2 } }}>
           <ListItemButton component={Link} to="/week04">
             <ListItemText
@@ -89,8 +92,10 @@ function Layout({ title, children }) {
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
       <Box sx={{ mb: 2 }}>
-        <Link to="/">← 홈으로</Link> {/* 홈으로 돌아가는 링크 */}
+        {/* Link: 홈으로 이동 */}
+        <Link to="/">← 홈으로</Link>
       </Box>
+      {/* Typography: 페이지 제목 */}
       <Typography variant="h3" sx={{ mt: 0, mb: 2, fontWeight: 700 }}>
         {title}
       </Typography>
@@ -108,29 +113,29 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
-          path="/week04"
-          element={
-            <Layout title="Week 04 (React 기초)">
-              <Week04Page />
-            </Layout>
-          }
-        />
+            path="/week04"
+            element={
+              <Layout title="Week 04 (React 기초)">
+                <Week04Page />
+              </Layout>
+            }
+          />
           <Route
-          path="/week05"
-          element={
-            <Layout title="Week 05 (Router + MUI)">
-              <Week05Page />
-            </Layout>
-          }
-        />
+            path="/week05"
+            element={
+              <Layout title="Week 05 (Router + MUI)">
+                <Week05Page />
+              </Layout>
+            }
+          />
           <Route
-          path="/week06"
-          element={
-            <Layout title="Week 06 (상태 관리)">
-              <Week06Page />
-            </Layout>
-          }
-        />
+            path="/week06"
+            element={
+              <Layout title="Week 06 (상태 관리)">
+                <Week06Page />
+              </Layout>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
