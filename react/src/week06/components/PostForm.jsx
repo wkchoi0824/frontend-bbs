@@ -44,6 +44,7 @@ const PostForm = () => {
         onChange={onChange} // 입력 변화 시 상태 업데이트
         placeholder="제목을 입력하세요" // 입력 힌트
         fullWidth // 가로 전체 사용
+        size="small" // 모바일에서 입력 높이를 줄이기 위해 small 사용
       />
 
       {/* TextField: 여러 줄 입력창 */}
@@ -56,6 +57,7 @@ const PostForm = () => {
         multiline // 여러 줄 입력
         rows={6} // 기본 줄 수
         fullWidth // 가로 전체 사용
+        size="small" // 모바일에서 입력 높이를 줄이기 위해 small 사용
       />
 
       {/* Button: form 제출 */}

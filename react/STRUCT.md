@@ -151,6 +151,115 @@ npm install react-router-dom
 npm install @mui/material @emotion/react @emotion/styled
 ```
 
+### Q4-2-1. 햄버거 아이콘이 안 보여요
+- MUI 아이콘은 **별도 패키지**입니다.
+- 햄버거 메뉴(`Menu` 아이콘)를 쓰려면 아래 설치가 필요합니다.
+
+```bash
+npm install @mui/icons-material
+```
+
+### Q4-2-2. 모바일에서 폰트/여백이 자동으로 줄어들게 하려면?
+- **MUI의 반응형 값**(`sx`에서 `xs`, `sm` 등)을 사용하면 됩니다.
+- 화면이 작아질수록 값을 줄여서 **가독성과 여백**을 조정합니다.
+
+예시(여백):
+```jsx
+<Box sx={{ p: { xs: 1.5, sm: 2 } }} />
+```
+
+예시(폰트 크기):
+```jsx
+<Typography sx={{ fontSize: { xs: "0.95rem", sm: "1rem" } }} />
+```
+
+### Q4-2-3. 모바일에서 사이드바 폭을 줄이고 싶어요
+- `sx`에서 `width`를 반응형 값으로 지정합니다.
+
+예시:
+```jsx
+<Paper sx={{ width: { xs: 220, sm: 240 } }} />
+```
+
+### Q4-2-4. 모바일에서 리스트/버튼 높이를 줄이고 싶어요
+- 리스트 버튼의 `padding`을 반응형 값으로 줄입니다.
+
+예시:
+```jsx
+<List
+  sx={{
+    "& .MuiListItemButton-root": {
+      py: { xs: 0.5, sm: 0.75 },
+    },
+  }}
+/>
+```
+
+### Q4-2-5. 모바일에서 입력폼 높이를 줄이고 싶어요
+- `TextField`에 `size="small"`을 사용하면 입력 높이가 줄어듭니다.
+
+예시:
+```jsx
+<TextField size="small" />
+```
+
+### Q4-2-6. 모바일에서 Typography/버튼/Chip까지 자동으로 줄이고 싶어요
+- 전역 테마(`createTheme`)의 `components` 옵션으로 한 번에 제어할 수 있습니다.
+- 이 방식은 **모든 화면에 동일하게 적용**되어 일관성이 좋아집니다.
+
+예시:
+```jsx
+const theme = createTheme({
+  components: {
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          "@media (max-width:600px)": { fontSize: "0.95rem" },
+          "@media (min-width:600px) and (max-width:900px)": { fontSize: "0.98rem" },
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          "@media (max-width:600px)": { fontSize: "0.9rem", padding: "6px 12px" },
+        },
+      },
+    },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          "@media (max-width:600px)": { fontSize: "0.75rem", height: 22 },
+        },
+      },
+    },
+  },
+});
+```
+
+### Q4-2-7. TextField와 List도 전역으로 줄일 수 있나요?
+- 가능합니다. `MuiTextField`, `MuiListItemButton` 등에 전역 스타일을 줄 수 있습니다.
+
+예시:
+```jsx
+const theme = createTheme({
+  components: {
+    MuiTextField: {
+      defaultProps: {
+        size: "small", // 기본 입력 크기
+      },
+    },
+    MuiListItemButton: {
+      styleOverrides: {
+        root: {
+          "@media (max-width:600px)": { paddingTop: 6, paddingBottom: 6 },
+        },
+      },
+    },
+  },
+});
+```
+
 ### Q4-3. MUI는 어떻게 사용하나요?
 - 기본 컴포넌트(Button 등)를 import 해서 사용합니다.
 - 테마 적용은 `ThemeProvider`로 감싸는 방식입니다.
@@ -215,6 +324,13 @@ npm install axios
 
 ### Q4-13. axios 예시 코드는 어디에 있나요?
 - 아래 **부록: 예시 코드 모음**에 정리되어 있습니다.
+
+### Q4-14. MUI를 쓰면 CSS를 안 써도 되나요?
+- **아닙니다.** MUI가 있어도 CSS가 완전히 필요 없어지진 않습니다.
+- 다만, 대부분의 스타일은 `sx`/테마로 처리할 수 있어서 **CSS 사용량이 줄어듭니다.**
+- CSS가 필요한 경우:
+  - 전역 스타일(배경/폰트/리셋)
+  - MUI에 없는 커스텀 디자인
 
 ### Q5. `public`과 `src`의 차이는?
 - `public`: 그대로 복사되는 정적 파일

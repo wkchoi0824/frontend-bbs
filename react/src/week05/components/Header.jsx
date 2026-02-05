@@ -3,9 +3,10 @@
 // - MUI AppBar/Toolbar로 구조를 눈에 보이게 강조
 
 // MUI AppBar 관련 컴포넌트
-import { AppBar, Toolbar, Typography, Box, Chip } from "@mui/material";
+import { AppBar, Toolbar, Typography, Box, Chip, IconButton } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
-const Header = () => {
+const Header = ({ onMenuClick, showMenuButton }) => {
   return (
     <AppBar
       position="static" // 상단 고정 대신 현재 위치에 배치
@@ -22,6 +23,17 @@ const Header = () => {
           py: 0.5, // 상하 여백
         }}
       >
+        {/* 모바일에서만 보이는 햄버거 버튼 */}
+        {showMenuButton && (
+          <IconButton
+            color="inherit"
+            onClick={onMenuClick}
+            aria-label="메뉴 열기"
+            sx={{ mr: 1 }}
+          >
+            <MenuIcon />
+          </IconButton>
+        )}
         {/* Typography: 제목 텍스트 */}
         <Typography
           variant="h6" // 제목 크기

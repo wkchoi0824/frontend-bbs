@@ -37,7 +37,7 @@ const BoardListPage = () => {
       <Paper
         elevation={0}
         sx={{
-          p: 2, // 내부 여백
+          p: { xs: 1.5, sm: 2 }, // 모바일에서 여백 축소
           border: "1px solid #e2e8f0", // 테두리
           borderRadius: 3, // 둥근 모서리
           boxShadow: "0 8px 20px rgba(15, 23, 42, 0.06)", // 그림자

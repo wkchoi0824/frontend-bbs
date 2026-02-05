@@ -11,7 +11,7 @@ const Sidebar = () => {
     <Paper
       elevation={0} // 그림자 제거
       sx={{
-        width: 240, // 사이드바 고정 폭
+        width: { xs: 220, sm: 240 }, // 모바일에서는 더 좁게
         borderRight: "1px solid #e2e8f0", // 오른쪽 경계선
         bgcolor: "rgba(255,255,255,0.9)", // 살짝 투명한 배경
         p: 2, // 내부 여백
@@ -27,7 +27,12 @@ const Sidebar = () => {
       {/* List: 세로 메뉴 그룹 */}
       <List
         dense // 촘촘한 리스트
-        sx={{ "& .MuiListItemButton-root": { borderRadius: 2 } }} // 둥근 버튼
+        sx={{
+          "& .MuiListItemButton-root": {
+            borderRadius: 2, // 둥근 버튼
+            py: { xs: 0.5, sm: 0.75 }, // 모바일에서 버튼 높이 축소
+          },
+        }}
       >
         {/* ListItemButton: 클릭 가능한 메뉴 아이템 */}
         <ListItemButton>
@@ -45,7 +50,12 @@ const Sidebar = () => {
       {/* 두 번째 메뉴 그룹 */}
       <List
         dense
-        sx={{ "& .MuiListItemButton-root": { borderRadius: 2 } }}
+        sx={{
+          "& .MuiListItemButton-root": {
+            borderRadius: 2,
+            py: { xs: 0.5, sm: 0.75 }, // 모바일에서 버튼 높이 축소
+          },
+        }}
       >
         <ListItemButton>
           <ListItemText primary="공지" /> {/* 하단 메뉴 1 */}

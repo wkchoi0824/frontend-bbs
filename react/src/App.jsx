@@ -22,8 +22,11 @@ import Week06Page from "./week06/pages/Week06Page";
 // MUI 테마 설정: 전체 폰트/색상/라운드 설정을 통일
 const theme = createTheme({
   typography: {
+    // 기본 글자 크기(데스크톱 기준)
     fontSize: 17,
+    // 기본 본문 폰트
     fontFamily: '"Manrope", sans-serif',
+    // 제목 폰트는 Space Grotesk로 통일
     h1: { fontFamily: '"Space Grotesk", sans-serif' },
     h2: { fontFamily: '"Space Grotesk", sans-serif' },
     h3: { fontFamily: '"Space Grotesk", sans-serif' },
@@ -39,6 +42,63 @@ const theme = createTheme({
     text: { primary: "#0f172a", secondary: "#475569" },
   },
   shape: { borderRadius: 14 },
+  // 반응형 폰트: 화면이 작아질수록 글자 크기 축소
+  components: {
+    // Typography: 전체 텍스트 크기를 화면 크기에 따라 축소
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          // 모바일 기본 폰트 크기 축소 (xs)
+          "@media (max-width:600px)": {
+            fontSize: "0.95rem",
+          },
+          // 태블릿 정도(sm)에서는 약간만 축소
+          "@media (min-width:600px) and (max-width:900px)": {
+            fontSize: "0.98rem",
+          },
+        },
+      },
+    },
+    // Button: 모바일에서 버튼 높이/글자 크기 축소
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          "@media (max-width:600px)": {
+            fontSize: "0.9rem",
+            padding: "6px 12px",
+          },
+        },
+      },
+    },
+    // Chip: 모바일에서 라벨 크기 축소
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          "@media (max-width:600px)": {
+            fontSize: "0.75rem",
+            height: 22,
+          },
+        },
+      },
+    },
+    // TextField: 전체 입력을 기본적으로 small로 설정
+    MuiTextField: {
+      defaultProps: {
+        size: "small",
+      },
+    },
+    // ListItemButton: 모바일에서 버튼 높이 축소
+    MuiListItemButton: {
+      styleOverrides: {
+        root: {
+          "@media (max-width:600px)": {
+            paddingTop: 6,
+            paddingBottom: 6,
+          },
+        },
+      },
+    },
+  },
 });
 
 // Home: 첫 화면(주차 선택)
