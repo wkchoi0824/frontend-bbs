@@ -8,8 +8,23 @@ import { Box, Chip, Paper, Typography } from "@mui/material";
 import BoardList from "../components/BoardList";
 import { posts } from "../data/posts";
 
+// 📌 데이터 흐름 요약(위 → 아래)
+// 1) posts.js에서 데이터 준비
+// 2) Week04Page가 posts를 가져옴(import)
+// 3) BoardList에 props로 전달(items={posts})
+// 4) BoardList가 items.map으로 반복 렌더링
+// 5) BoardItem이 각 post를 화면에 표시
+//
+// 📌 ASCII 흐름도
+// posts.js (데이터)
+//    ↓ import
+// Week04Page (데이터 보유)
+//    ↓ props 전달
+// BoardList (반복 렌더)
+//    ↓ props 전달
+// BoardItem (화면 표시)
 export default function Week04Page() {
-  // App에서 데이터를 가져와 하위 컴포넌트에 전달
+  // Week04Page가 데이터를 가지고, 자식에게 내려줌
   return (
     <Box> {/* 큰 레이아웃 박스 */}
       {/* Box: 제목과 라벨을 나란히 배치 */}

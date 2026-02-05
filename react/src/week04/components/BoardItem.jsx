@@ -5,6 +5,8 @@
 // MUI 리스트용 컴포넌트
 import { ListItem, ListItemText, Chip } from "@mui/material";
 
+// 📌 BoardItem 역할
+// - 하나의 post를 받아 화면에 표시
 export default function BoardItem({ post }) {
   return (
     <ListItem divider> {/* ListItem: 리스트 한 줄 */}

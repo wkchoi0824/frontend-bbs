@@ -1,6 +1,7 @@
 // [요약]
 // - 게시판 목록에 사용할 더미 데이터
 
+// 📌 posts 배열은 "게시글 목록" 데이터
 export const posts = [
   // id: 고유 번호, title: 제목, author: 작성자
   { id: 1, title: "첫 글입니다", author: "alice" },

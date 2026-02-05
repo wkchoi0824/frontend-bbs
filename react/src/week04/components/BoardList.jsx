@@ -6,6 +6,9 @@
 import { List, Chip, Box, Typography } from "@mui/material";
 import BoardItem from "./BoardItem"; // 단일 아이템 컴포넌트
 
+// 📌 BoardList 역할
+// - items(게시글 배열)를 받아서 반복 렌더링
+// - 각 항목을 BoardItem에 전달
 export default function BoardList({ items }) {
   // items가 없거나 비어있을 때를 고려한 간단 처리
   if (!items || items.length === 0) {
