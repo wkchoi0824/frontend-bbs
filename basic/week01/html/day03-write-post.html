@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+  [요약]
+  - header/main/section 등 시맨틱 태그를 사용한다.
+  - 글쓰기 form 구조를 만든다.
+  Day 3: semantic tag + 접근성
+  목표: 게시판 글쓰기 화면 만들기
+  체크: 구조가 명확한 HTML
+-->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Write Post</title>
+    <!-- CSS 연결: week02/css/day03-card-ui.css -->
+    <link rel="stylesheet" href="../../week02/css/day03-card-ui.css" />
+  </head>
+  <body>
+    <header>
+      <h1>QnA 게시판</h1>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2 class="card-title">글쓰기</h2>
+
+        <!-- 글쓰기 form: 제목/내용 입력 후 제출 -->
+        <form action="#" method="post">
+          <div>
+            <label for="title">제목</label>
+            <!-- id와 for 연결, name은 전송되는 키 -->
+            <input id="title" name="title" type="text" placeholder="제목을 입력하세요" />
+          </div>
+
+          <div>
+            <label for="content">내용</label>
+            <!-- textarea: 여러 줄 입력 -->
+            <textarea id="content" name="content" rows="6" placeholder="내용을 입력하세요"></textarea>
+          </div>
+
+          <!-- 제출 버튼 -->
+          <button type="submit">등록</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <small>Basic Board Practice</small>
+    </footer>
+  </body>
+</html>

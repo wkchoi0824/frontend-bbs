@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+  [요약]
+  - header/main/aside/footer 레이아웃을 구성한다.
+  Day 4: 페이지 구성 실습
+  목표: 상단바 + 본문 + 사이드 구조 만들기
+-->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Layout</title>
+    <!-- CSS 연결: week02/css/day04-board-list.css -->
+    <link rel="stylesheet" href="../../week02/css/day04-board-list.css" />
+  </head>
+  <body>
+    <!-- header: 페이지 상단 영역 -->
+    <header class="layout-header">
+      <h1>My Board</h1>
+    </header>
+
+    <!-- main: 본문 영역 -->
+    <main class="layout-main">
+      <!-- section: 본문 콘텐츠 -->
+      <section class="layout-section">
+        <h2>본문 영역</h2>
+        <p>게시글 목록 또는 상세 내용이 들어갑니다.</p>
+      </section>
+
+      <!-- aside: 보조/사이드 영역 -->
+      <aside class="layout-aside">
+        <h3>사이드 영역</h3>
+        <ul>
+          <li>공지사항</li>
+          <li>인기글</li>
+          <li>태그</li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- footer: 하단 영역 -->
+    <footer class="layout-footer">
+      <small>Layout Practice</small>
+    </footer>
+  </body>
+</html>

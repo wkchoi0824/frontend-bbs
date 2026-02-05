@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+  [요약]
+  - form 요소와 input의 역할을 이해한다.
+  - label/for, name 전송 구조를 확인한다.
+  Day 2: form / input / button 이해
+  목표: 로그인 form 완성
+  체크: 입력값 제출 구조 이해
+-->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <!-- CSS 연결: week02/css/day02-typography.css -->
+    <link rel="stylesheet" href="../../week02/css/day02-typography.css" />
+  </head>
+  <body>
+    <h1>로그인</h1>
+
+    <!-- form: 입력값을 서버로 전송하는 영역 -->
+    <form action="#" method="post">
+      <div>
+        <label for="email">이메일</label>
+        <!-- id는 label의 for와 연결, name은 서버로 전송되는 키 -->
+        <input id="email" name="email" type="email" placeholder="name@example.com" />
+      </div>
+
+      <div>
+        <label for="password">비밀번호</label>
+        <!-- type="password": 입력 내용이 마스킹 처리됨 -->
+        <input id="password" name="password" type="password" placeholder="********" />
+      </div>
+
+      <!-- submit 버튼을 누르면 form이 전송됨 -->
+      <button type="submit">로그인</button>
+    </form>
+  </body>
+</html>

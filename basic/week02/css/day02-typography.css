@@ -1,0 +1,40 @@
+/*
+  [요약]
+  - 글꼴/색상 변수를 정의하고 텍스트 톤을 맞춘다.
+  Day 2: 타이포그래피와 색상
+  목표: 텍스트 가독성과 기본 톤을 맞추기
+*/
+
+:root {
+  --text: #222;   /* 기본 텍스트 색 */
+  --muted: #666;  /* 보조 텍스트 색 */
+  --primary: #2f6fed; /* 강조/링크 색 */
+}
+
+body {
+  margin: 24px;
+  font-family: "Georgia", serif; /* 본문 글꼴 */
+  color: var(--text); /* 기본 텍스트 색 */
+  line-height: 1.6; /* 줄 간격 */
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 12px 0;
+  font-weight: 700; /* 제목 굵기 */
+}
+
+p {
+  margin: 0 0 12px 0;
+  color: var(--muted); /* 본문보다 옅은 색 */
+}
+
+.link {
+  color: var(--primary); /* 링크 색 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.link:hover {
+  text-decoration: underline; /* 호버 시 밑줄 */
+}

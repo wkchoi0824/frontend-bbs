@@ -1,0 +1,39 @@
+/*
+  [요약]
+  - 카드 컴포넌트의 기본 스타일을 만든다.
+  Day 3: 카드형 UI
+  목표: 반복 가능한 카드 컴포넌트 만들기
+*/
+
+:root {
+  --border: #e3e3e3; /* 경계선 색 */
+  --bg: #fafafa;     /* 기본 배경색 */
+  --text: #222;      /* 본문 텍스트 색 */
+  --muted: #777;     /* 보조 텍스트 색 */
+}
+
+body {
+  margin: 24px;
+  font-family: Arial, sans-serif; /* 기본 글꼴 */
+  background: #f4f6f8; /* 페이지 배경 */
+}
+
+.card {
+  background: #fff; /* 카드 배경 */
+  border: 1px solid var(--border); /* 카드 테두리 */
+  border-radius: 12px; /* 모서리 둥글게 */
+  padding: 16px; /* 내부 여백 */
+  margin-bottom: 12px; /* 카드 사이 간격 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); /* 그림자 */
+}
+
+.card-title {
+  margin: 0 0 8px 0;
+  color: var(--text); /* 제목 색 */
+  font-size: 18px; /* 제목 크기 */
+}
+
+.card-meta {
+  color: var(--muted); /* 보조 정보 색 */
+  font-size: 12px; /* 보조 정보 크기 */
+}

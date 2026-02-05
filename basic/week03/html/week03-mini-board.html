@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+  [요약]
+  - 필터 버튼과 출력 영역을 연결한다.
+  Week 3 미니 과제 연결용 HTML
+  목표: 필터 버튼으로 QnA 게시글만 출력
+-->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3 Mini Board</title>
+  </head>
+  <body>
+    <h1>미니 게시판</h1>
+
+    <!-- 버튼 클릭 시 JS에서 QnA 필터가 실행됨 -->
+    <button id="filter-qna" type="button">QnA만 보기</button>
+
+    <!-- JS가 게시글 목록을 출력하는 영역 -->
+    <div id="mini-board"></div>
+
+    <!-- JS 연결: week03-mini-board.js 를 여기에서 연결
+         버튼 클릭 시 필터링된 목록이 출력됨 -->
+    <script src="../js/week03-mini-board.js"></script>
+  </body>
+</html>

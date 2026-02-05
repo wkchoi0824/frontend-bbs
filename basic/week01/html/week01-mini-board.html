@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+  [요약]
+  - 게시판 UI의 기본 구조를 HTML로 구성한다.
+  Week 1 미니 과제: HTML 게시판 UI
+  목표: 구조와 태그가 논리적인지 확인
+-->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Board</title>
+    <!-- CSS 연결: week02/css/day04-board-list.css -->
+    <link rel="stylesheet" href="../../week02/css/day04-board-list.css" />
+  </head>
+  <body>
+    <header>
+      <!-- 페이지의 대표 제목 영역 -->
+      <h1>QnA 게시판</h1>
+      <nav>
+        <!-- 네비게이션 링크: 실제 주소는 추후 연결 -->
+        <a href="#">홈</a> |
+        <a href="#">게시판</a> |
+        <a href="#">자료실</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>게시글 목록</h2>
+        <!-- 표(table): 게시글 리스트를 행/열로 표현 -->
+        <table class="board">
+          <thead>
+            <!-- 테이블 머리글 -->
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>작성자</th>
+              <th>작성일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 테이블 본문: 실제 데이터는 JS/백엔드로 대체 예정 -->
+            <tr>
+              <td>3</td>
+              <td>질문 있습니다</td>
+              <td>alice</td>
+              <td>2026-02-04</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>로그인 오류 해결</td>
+              <td>bob</td>
+              <td>2026-02-03</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>첫 글입니다</td>
+              <td>charlie</td>
+              <td>2026-02-02</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <small>Week 1 Mini Board</small>
+    </footer>
+  </body>
+</html>
