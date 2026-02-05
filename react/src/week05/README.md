@@ -8,7 +8,6 @@
 
 파일 구성:
 - `pages/Week05Page.jsx`: 레이아웃 + 페이지 연결
-- `routes/router.jsx`: 라우팅 정의(예시)
 - `layouts/MainLayout.jsx`: Header/Sidebar 포함 레이아웃
 - `components/Header.jsx`, `components/Sidebar.jsx`
 - `pages/BoardListPage.jsx`
