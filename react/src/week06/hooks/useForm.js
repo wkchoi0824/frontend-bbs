@@ -3,18 +3,18 @@
 
 import { useState } from "react"; // React 상태 훅
 
-export function useForm(initialValues) {
+export const useForm = (initialValues) => {
   const [values, setValues] = useState(initialValues); // 입력값 상태
 
-  function onChange(e) {
+  const onChange = (e) => {
     const { name, value } = e.target; // input의 name/value 읽기
     // 기존 값을 유지하면서 해당 name만 교체
     setValues((prev) => ({ ...prev, [name]: value }));
-  }
+  };
 
-  function reset() {
+  const reset = () => {
     setValues(initialValues); // 초기 상태로 되돌림
-  }
+  };
 
   return { values, onChange, reset }; // 외부에서 사용할 값/함수 반환
-}
+};

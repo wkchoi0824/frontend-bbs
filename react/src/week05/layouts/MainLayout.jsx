@@ -8,7 +8,7 @@ import { Box, Paper, Typography, Chip } from "@mui/material";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 
-export default function MainLayout({ children }) {
+const MainLayout = ({ children }) => {
   return (
     <Box sx={{ display: "flex", minHeight: "100vh", bgcolor: "#f6f7fb" }}>
       <Sidebar />
@@ -37,4 +37,6 @@ export default function MainLayout({ children }) {
       </Box>
     </Box>
   );
-}
+};
+
+export default MainLayout;

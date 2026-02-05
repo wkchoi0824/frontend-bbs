@@ -5,10 +5,12 @@
 import MainLayout from "../layouts/MainLayout"; // 공통 레이아웃
 import BoardListPage from "./BoardListPage"; // 실제 페이지
 
-export default function Week05Page() {
+const Week05Page = () => {
   return (
     <MainLayout>
       <BoardListPage /> {/* 메인 콘텐츠 영역 */}
     </MainLayout>
   );
-}
+};
+
+export default Week05Page;

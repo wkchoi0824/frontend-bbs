@@ -5,7 +5,7 @@
 // MUI 사이드바용 컴포넌트
 import { Box, List, ListItemButton, ListItemText, Divider, Chip, Paper } from "@mui/material";
 
-export default function Sidebar() {
+const Sidebar = () => {
   return (
     <Paper
       elevation={0}
@@ -40,4 +40,6 @@ export default function Sidebar() {
       </List>
     </Paper>
   );
-}
+};
+
+export default Sidebar;

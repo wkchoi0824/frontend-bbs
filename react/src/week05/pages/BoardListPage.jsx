@@ -10,7 +10,7 @@ const dummy = [
   { id: 2, title: "질문 있습니다", author: "bob" },
 ];
 
-export default function BoardListPage() {
+const BoardListPage = () => {
   return (
     <Box>
       <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}>
@@ -42,4 +42,6 @@ export default function BoardListPage() {
       </Paper>
     </Box>
   );
-}
+};
+
+export default BoardListPage;

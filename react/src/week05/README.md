@@ -12,3 +12,8 @@
 - `components/Header.jsx`, `components/Sidebar.jsx`
 - `pages/BoardListPage.jsx`
 - `theme/muiTheme.js`: MUI 테마 샘플
+
+**코딩 스타일**
+- Week05는 **화살표 함수 스타일**로 작성되었습니다.
+  - 실무에서 자주 쓰는 문법을 익히기 위한 의도입니다.
+  - 선언식 대비 간결하고, 콜백과 문법이 통일되는 장점이 있습니다.

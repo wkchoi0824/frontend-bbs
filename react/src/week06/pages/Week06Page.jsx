@@ -5,7 +5,7 @@
 import { Box, Chip, Paper, Typography } from "@mui/material";
 import WritePostPage from "./WritePostPage";
 
-export default function Week06Page() {
+const Week06Page = () => {
   return (
     <Box> {/* 전체 레이아웃 박스 */}
       <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}>
@@ -27,4 +27,6 @@ export default function Week06Page() {
       </Paper>
     </Box>
   );
-}
+};
+
+export default Week06Page;

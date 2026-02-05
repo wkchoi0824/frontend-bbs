@@ -5,7 +5,7 @@
 // MUI AppBar 관련 컴포넌트
 import { AppBar, Toolbar, Typography, Box, Chip } from "@mui/material";
 
-export default function Header() {
+const Header = () => {
   return (
     <AppBar
       position="static"
@@ -30,4 +30,6 @@ export default function Header() {
       </Toolbar>
     </AppBar>
   );
-}
+};
+
+export default Header;

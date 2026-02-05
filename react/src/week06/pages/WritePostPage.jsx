@@ -5,7 +5,7 @@
 import { Box, Chip, Typography } from "@mui/material";
 import PostForm from "../components/PostForm"; // 입력 폼 컴포넌트
 
-export default function WritePostPage() {
+const WritePostPage = () => {
   return (
     <Box>
       <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}>
@@ -17,4 +17,6 @@ export default function WritePostPage() {
       <PostForm /> {/* 실제 입력 폼 */}
     </Box>
   );
-}
+};
+
+export default WritePostPage;

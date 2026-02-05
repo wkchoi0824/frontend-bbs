@@ -6,18 +6,18 @@ import { Box, Button, Chip, TextField } from "@mui/material"; // MUI 입력/버�
 import { useForm } from "../hooks/useForm"; // 입력 상태 관리 훅
 import { addPost } from "../store/postStore"; // 저장소에 데이터 추가
 
-export default function PostForm() {
+const PostForm = () => {
   // useForm 훅으로 입력값 상태 관리
   const { values, onChange, reset } = useForm({
     title: "",
     content: "",
   });
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault(); // form 기본 새로고침 막기
     addPost(values); // 저장소에 추가
     reset(); // 입력값 초기화
-  }
+  };
 
   return (
     <Box
@@ -60,4 +60,6 @@ export default function PostForm() {
       </Button>
     </Box>
   );
-}
+};
+
+export default PostForm;
