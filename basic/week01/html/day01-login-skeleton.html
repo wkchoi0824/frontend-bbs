@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <!--
+  [요약]
+  - 기본 구조 + 입력 요소를 배치한다.
+  - JS로 메시지를 바꾸는 id를 준비한다.
   Day 1: HTML 기본 구조 + 로그인 화면 뼈대
   목표: 제목, 입력창, 버튼이 화면에 보이게 만들기
 -->
@@ -65,16 +68,20 @@
 
     <div>
       <label for="email">이메일</label>
+      <!-- id는 label의 for와 연결됨 -->
       <input id="email" type="email" placeholder="name@example.com" />
     </div>
 
     <div>
       <label for="password">비밀번호</label>
+      <!-- type="password"는 입력값을 숨김 처리 -->
       <input id="password" type="password" placeholder="********" />
     </div>
 
+    <!-- 클릭 이벤트가 연결되는 버튼 -->
     <button type="button" id="click-btn">로그인</button>
 
+    <!-- JS가 텍스트를 바꾸는 영역 -->
     <p id="message"></p>
 
     <!--
@@ -92,6 +99,7 @@
     <!-- <script src="../js/day01-basics.js"></script> -->
  
      <script>
+        // 스크립트가 body 끝에 있어 DOM이 만들어진 뒤 실행됨
         let count = 0; // 초기값 세팅
 
         function updateMessage() {

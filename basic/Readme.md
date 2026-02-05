@@ -6,61 +6,66 @@
 **폴더 구조(수업용)**
 ```
 basic/
-├─ html/
-│  ├─ day01-login-skeleton.html
-│  ├─ day01-js-basics.html
-│  ├─ day02-login-form.html
-│  ├─ day02-array-object.html
-│  ├─ day03-write-post.html
-│  ├─ day03-async.html
-│  ├─ day04-layout.html
-│  ├─ day04-dummy-board.html
-│  ├─ week01-mini-board.html
-│  └─ week03-mini-board.html
-├─ css/
-│  ├─ day01-box-model.css
-│  ├─ day02-typography.css
-│  ├─ day03-card-ui.css
-│  ├─ day04-board-list.css
-│  └─ week02-mini-ui.css
-└─ js/
-   ├─ day01-basics.js
-   ├─ day02-array-object.js
-   ├─ day03-async.js
-   ├─ day04-dummy-board.js
-   └─ week03-mini-board.js
+├─ week01/
+│  └─ html/
+│     ├─ day01-login-skeleton.html
+│     ├─ day02-login-form.html
+│     ├─ day03-write-post.html
+│     ├─ day04-layout.html
+│     ├─ week01-mini-board.html
+│     └─ test.html
+├─ week02/
+│  └─ css/
+│     ├─ day01-box-model.css
+│     ├─ day02-typography.css
+│     ├─ day03-card-ui.css
+│     ├─ day04-board-list.css
+│     └─ week02-mini-ui.css
+└─ week03/
+   ├─ html/
+   │  ├─ day01-js-basics.html
+   │  ├─ day02-array-object.html
+   │  ├─ day03-async.html
+   │  ├─ day04-dummy-board.html
+   │  └─ week03-mini-board.html
+   └─ js/
+      ├─ day01-basics.js
+      ├─ day02-array-object.js
+      ├─ day03-async.js
+      ├─ day04-dummy-board.js
+      └─ week03-mini-board.js
 ```
 
 **파일 열기 안내(수업용)**
 1. 공통 원칙: HTML 파일을 열면 그 안에 CSS/JS가 연결되어 있어 바로 확인 가능
 2. 1주차(HTML)
-1. `basic/html/day01-login-skeleton.html`
+1. `basic/week01/html/day01-login-skeleton.html`
 시작 한 문장: "오늘은 HTML 문서의 가장 기본 뼈대를 만들어봅니다."
-2. `basic/html/day02-login-form.html`
+2. `basic/week01/html/day02-login-form.html`
 시작 한 문장: "오늘은 form과 input으로 '제출 가능한' 로그인 폼을 완성합니다."
-3. `basic/html/day03-write-post.html`
+3. `basic/week01/html/day03-write-post.html`
 시작 한 문장: "오늘은 시맨틱 태그로 구조를 더 명확하게 나눠봅니다."
-4. `basic/html/day04-layout.html`
+4. `basic/week01/html/day04-layout.html`
 시작 한 문장: "오늘은 페이지를 상단/본문/사이드로 나누는 연습을 합니다."
-5. `basic/html/week01-mini-board.html`
+5. `basic/week01/html/week01-mini-board.html`
 시작 한 문장: "이번 주는 HTML만으로 게시판 화면을 완성해봅니다."
 시작 한 문장: "오늘은 HTML 구조만으로 화면의 뼈대를 만드는 연습을 해볼게요."
 3. 2주차(CSS)
 1. 1주차 HTML 파일을 그대로 열고, CSS 파일을 수정하며 변화를 확인
 시작 한 문장: "오늘은 CSS로 같은 화면을 더 보기 좋게 만들어봅니다."
-2. 주요 CSS 파일: `basic/css/day01-box-model.css`, `basic/css/day02-typography.css`, `basic/css/day03-card-ui.css`, `basic/css/day04-board-list.css`, `basic/css/week02-mini-ui.css`
+2. 주요 CSS 파일: `basic/week02/css/day01-box-model.css`, `basic/week02/css/day02-typography.css`, `basic/week02/css/day03-card-ui.css`, `basic/week02/css/day04-board-list.css`, `basic/week02/css/week02-mini-ui.css`
 시작 한 문장: "오늘은 색/폰트/간격을 통일해서 UI 톤을 맞춰봅니다."
 시작 한 문장: "오늘은 같은 HTML에 스타일을 입혀서 읽기 쉬운 화면을 만들어봅니다."
 4. 3주차(JS)
-1. `basic/html/day01-js-basics.html` → `basic/js/day01-basics.js`
+1. `basic/week03/html/day01-js-basics.html` → `basic/week03/js/day01-basics.js`
 시작 한 문장: "오늘은 버튼 클릭으로 화면이 바뀌는 걸 직접 확인해봅니다."
-2. `basic/html/day02-array-object.html` → `basic/js/day02-array-object.js`
+2. `basic/week03/html/day02-array-object.html` → `basic/week03/js/day02-array-object.js`
 시작 한 문장: "오늘은 배열/객체 데이터를 다루는 기초를 배웁니다."
-3. `basic/html/day03-async.html` → `basic/js/day03-async.js`
+3. `basic/week03/html/day03-async.html` → `basic/week03/js/day03-async.js`
 시작 한 문장: "오늘은 비동기 흐름을 콘솔로 확인해봅니다."
-4. `basic/html/day04-dummy-board.html` → `basic/js/day04-dummy-board.js`
+4. `basic/week03/html/day04-dummy-board.html` → `basic/week03/js/day04-dummy-board.js`
 시작 한 문장: "오늘은 데이터로 게시판 리스트를 화면에 뿌려봅니다."
-5. `basic/html/week03-mini-board.html` → `basic/js/week03-mini-board.js`
+5. `basic/week03/html/week03-mini-board.html` → `basic/week03/js/week03-mini-board.js`
 시작 한 문장: "이번 주는 필터 기능까지 포함한 미니 게시판을 완성합니다."
 시작 한 문장: "오늘은 자바스크립트로 화면이 '움직이게' 만드는 경험을 해볼게요."
 
@@ -144,3 +149,98 @@ Day 5
 1. 매일 완성된 화면을 보여줘서 동기 유지
 2. 코드는 짧게, 설명은 많이
 3. 실습 파일은 미리 만들어 따라치기 쉽게
+
+---
+
+**주차별 진행 체크리스트 (수업 전/후)**
+
+**Week 01 (HTML) – 수업 전**
+1. `basic/week01/html/day01-login-skeleton.html` 열기
+2. 제목/입력/버튼이 화면에 보이는지 확인
+3. `basic/week01/html/week01-mini-board.html` 위치 확인
+
+**Week 01 (HTML) – 수업 후**
+1. `day01-login-skeleton.html`에 기본 구조 설명이 있는지 확인
+2. `day02-login-form.html`에서 form/label/name 설명 가능한지 점검
+3. `week01-mini-board.html`까지 완성했는지 확인
+
+**Week 02 (CSS) – 수업 전**
+1. Week01 HTML을 열고 CSS 파일 연결 확인
+2. `basic/week02/css/day01-box-model.css` 적용 확인
+3. `basic/week02/css/day04-board-list.css` 적용 확인
+
+**Week 02 (CSS) – 수업 후**
+1. 박스 모델(margin/padding/border) 설명 가능 여부 확인
+2. 타이포그래피(폰트/색/간격) 정리 여부 확인
+3. 카드/테이블 스타일 변화가 잘 보이는지 확인
+
+**Week 03 (JS) – 수업 전**
+1. `basic/week03/html/day01-js-basics.html`에서 클릭 이벤트 확인
+2. 콘솔에 `map/filter` 결과 출력 가능한지 확인
+3. `basic/week03/html/week03-mini-board.html` 위치 확인
+
+**Week 03 (JS) – 수업 후**
+1. DOM 선택/이벤트 흐름을 설명 가능한지 확인
+2. 비동기 로그 흐름(`async/await`) 설명 가능한지 확인
+3. `week03-mini-board.html` 필터 동작 확인
+
+---
+
+**주차별 예상 소요 시간**
+
+**Week 01 (HTML)**
+1. Day 1–2: 60–90분
+2. Day 3–4: 60–90분
+3. Day 5(미니 과제): 30–60분
+
+**Week 02 (CSS)**
+1. Day 1–2: 60–90분
+2. Day 3–4: 60–90분
+3. Day 5(미니 과제): 30–60분
+
+**Week 03 (JS)**
+1. Day 1–2: 60–90분
+2. Day 3–4: 60–90분
+3. Day 5(미니 과제): 30–60분
+
+---
+
+**주차별 미션/퀴즈 예시**
+
+**Week 01 (HTML)**
+1. 미션: `header/nav/main/footer`가 모두 포함된 레이아웃 만들기
+2. 퀴즈: `<label>`의 `for` 속성은 무엇을 연결하는가?
+
+**Week 02 (CSS)**
+1. 미션: 카드 3개를 동일한 폭과 간격으로 배치하기
+2. 퀴즈: `margin`과 `padding`의 차이 설명하기
+
+**Week 03 (JS)**
+1. 미션: 클릭 횟수를 화면에 표시하기
+2. 퀴즈: `map`과 `filter`의 차이 설명하기
+
+---
+
+**주차별 난이도 & 평가 기준**
+
+**Week 01 (HTML)**
+- 난이도: 하
+- 평가 기준: 구조가 명확하고 시맨틱 태그 사용이 적절한가
+
+**Week 02 (CSS)**
+- 난이도: 중
+- 평가 기준: 간격/폰트/색 톤이 일관적인가
+
+**Week 03 (JS)**
+- 난이도: 중~상
+- 평가 기준: DOM 이벤트 흐름과 데이터 처리(map/filter)가 명확한가
+
+---
+
+**주차별 한 줄 요약 (표)**
+
+| 주차 | 핵심 키워드 | 한 줄 요약 | 예시 파일 |
+| --- | --- | --- | --- |
+| Week 01 (HTML) | 구조 | 보이는 화면의 뼈대를 정확히 그린다. | `basic/week01/html/day01-login-skeleton.html` |
+| Week 02 (CSS) | 톤 | 같은 구조를 읽기 좋은 UI로 정리한다. | `basic/week02/css/day02-typography.css` |
+| Week 03 (JS) | 동작 | 이벤트와 데이터로 화면을 움직이게 한다. | `basic/week03/html/day01-js-basics.html` |
