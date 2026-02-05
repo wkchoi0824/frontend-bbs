@@ -7,8 +7,8 @@
 - 실습: 전체 화면 구성
 
 파일 구성:
-- `App.jsx`: 라우터/레이아웃 연결
-- `routes/router.js`: 라우팅 정의
+- `pages/Week05Page.jsx`: 레이아웃 + 페이지 연결
+- `routes/router.jsx`: 라우팅 정의(예시)
 - `layouts/MainLayout.jsx`: Header/Sidebar 포함 레이아웃
 - `components/Header.jsx`, `components/Sidebar.jsx`
 - `pages/BoardListPage.jsx`

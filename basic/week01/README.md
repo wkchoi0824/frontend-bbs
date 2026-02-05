@@ -12,7 +12,7 @@
 - `html/day03-write-post.html`
 - `html/day04-layout.html`
 - `html/week01-mini-board.html`
-- `html/test.html` (빈 템플릿)
+
 
 설명:
 - CSS는 week02 폴더에 있으며, HTML에서 경로가 연결되어 있습니다.

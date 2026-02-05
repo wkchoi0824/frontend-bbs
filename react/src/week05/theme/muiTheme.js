@@ -4,7 +4,7 @@
 
 export const theme = {
   palette: {
-    primary: { main: "#2f6fed" },
-    text: { primary: "#222" },
+    primary: { main: "#2f6fed" }, // 주요 색상
+    text: { primary: "#222" }, // 기본 텍스트 색
   },
 };

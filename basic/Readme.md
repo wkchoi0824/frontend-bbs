@@ -239,8 +239,9 @@ Day 5
 
 **주차별 한 줄 요약 (표)**
 
-| 주차 | 핵심 키워드 | 한 줄 요약 | 예시 파일 |
-| --- | --- | --- | --- |
-| Week 01 (HTML) | 구조 | 보이는 화면의 뼈대를 정확히 그린다. | `basic/week01/html/day01-login-skeleton.html` |
-| Week 02 (CSS) | 톤 | 같은 구조를 읽기 좋은 UI로 정리한다. | `basic/week02/css/day02-typography.css` |
-| Week 03 (JS) | 동작 | 이벤트와 데이터로 화면을 움직이게 한다. | `basic/week03/html/day01-js-basics.html` |
+| 주차           | 핵심 키워드 |           한 줄 요약               |                   예시 파일                      |
+| --------------|------------|-----------------------------------|----------------------------------------------- |
+| Week 01 (HTML) |    구조    | 보이는 화면의 뼈대를 정확히 그린다.    | `basic/week01/html/day01-login-skeleton.html`  |
+| Week 02 (CSS)  |     톤     | 같은 구조를 읽기 좋은 UI로 정리한다.  | `basic/week02/css/day02-typography.css`        |
+| Week 03 (JS)  |     동작    | 이벤트와 데이터로 화면을 움직이게 한다. | `basic/week03/html/day01-js-basics.html`       |
+ 

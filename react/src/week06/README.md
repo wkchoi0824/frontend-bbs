@@ -6,7 +6,7 @@
 - 글 작성 화면 구성
 
 파일 구성:
-- `App.jsx`: 페이지 연결
+- `pages/Week06Page.jsx`: 페이지 연결
 - `pages/WritePostPage.jsx`: 글 작성 페이지
 - `components/PostForm.jsx`: 입력 폼 컴포넌트
 - `hooks/useForm.js`: 입력 상태 관리 훅
